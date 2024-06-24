@@ -12,7 +12,7 @@ export default function Page() {
       Say hi 
       </h1>
       <h1 className="text-white pt-[24px] font-semibold text-[24px] w-[655px]">
-        Social's
+        Socials
       </h1>
       <Divider className="my-4" />
       <Link color="foreground" href="https://www.instagram.com/carl_sgnsn/" target='_blank'>
