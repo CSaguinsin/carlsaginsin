@@ -7,6 +7,7 @@ import { Link } from "@nextui-org/react";
 import PocketDevs from './pocketdevs';
 import ReCode from './recode';
 import BuildMastersHub from './buildmastershub';
+import {Button} from "@nextui-org/react";
 export default function Home() {
   return (
 <>
@@ -16,11 +17,13 @@ export default function Home() {
       <h1 className="text-white font-sans  font-bold pt-5 text-[20px]">
         Hi👋, I’m Carl Saginsin
       </h1>
-      <h1 className="text-white font-sans  font-bold text-[50px] w-[655px]">
+      <h1 className="text-white font-sans  font-bold text-[50px] w-[655px] pb-10">
         Full Stack Developer passionate with building software solutions
       </h1>
       <Link color="foreground" href="/socials">
-      <p className="font-bold pt-5 text-[20px]">Say Hi!👋</p>
+        <Button color="primary">
+            Say Hi!👋
+       </Button>
       </Link>
 </div>
 
