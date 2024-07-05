@@ -16,13 +16,6 @@ export default function App() {
       <Divider/>
       <CardBody>
         <p>Platform designed for developers. By providing a centralized hub to compile, store, and reuse code snippets.</p>
-        <br />
-        <div className="flex space-x-2 pt-2">
-            <Chip>TailwindCSS</Chip>
-            <Chip>AlpineJs</Chip>
-            <Chip>Laravel</Chip>
-            <Chip>Livewire</Chip>
-        </div>
       </CardBody>
       <Divider/>
       <CardFooter>

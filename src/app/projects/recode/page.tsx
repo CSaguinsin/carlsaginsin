@@ -12,13 +12,15 @@ export default function Page() {
           <div className="pt-[32px]">
             <Chip color="success" variant="dot">UX Case Study</Chip>
           </div>
+          <p className="pt-3 font-bold text-white">Project Duration:</p>
+                <p className="font-semibold text-blue-400">June 17, 2024 - June 25, 2024</p>
           <div className="flex flex-row space-x-10 mx-auto">
-              <div className="flex flex-col pt-10">
+              <div className="flex flex-col pt-5">
                 <div className="flex-row leading-none">
                   <h1 className="font-bold text-[6rem]">ReCode</h1>
                   <h3 className="text-[1rem] font-sans">Built for Developers</h3>
                 </div>
-                <Image src={ReCode} alt="recode" className="pt-10 h-[25rem] w-[50rem]" />
+                <Image src={ReCode} alt="recode" className="pt-5 h-[25rem] w-[50rem]" />
               </div>
           </div>
       </section>
