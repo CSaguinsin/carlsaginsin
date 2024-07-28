@@ -1,7 +1,7 @@
 import {Chip} from "@nextui-org/react";
-import ReCode from '../../../../public/recodeScreen.png';
-import codeGraphic from '../../../../public/callToAction.png';
-import DesignRecode from '../../../../public/designRecode.png';
+import Survefy from '../../../../public/survefyScreen.png';
+import codeGraphic from '../../../../public/survefyObjectives.png';
+import DesignRecode from '../../../../public/survefyUI.png';
 import CodingRecode from '../../../../public/codingRecode.png';
 import Image from "next/image";
 import Socials from "../../socials/page";
@@ -13,14 +13,14 @@ export default function Page() {
             <Chip color="success" variant="dot">UX Case Study</Chip>
           </div>
           <p className="pt-3 font-bold text-white">Project Duration:</p>
-                <p className="font-semibold text-blue-400">Aug 21 – June 16 2024</p>
+                <p className="font-semibold text-blue-400">June 23 2024 – July 21 2024</p>
           <div className="flex flex-row space-x-10 mx-auto">
               <div className="flex flex-col pt-5">
-                <div className="flex-row leading-none">
-                  <h1 className="font-bold text-[6rem]">ReCode</h1>
-                  <h3 className="text-[1rem] font-sans">Built for Developers</h3>
+                <div className="flex-row ">
+                  <h1 className="font-bold text-[6rem]">Survefy</h1>
+                  <h3 className="text-[1rem] font-sans">Helps you gather user feedback to shape products users love!</h3>
                 </div>
-                <Image src={ReCode} alt="recode" className="pt-5 h-[25rem] w-[50rem]" />
+                <Image src={Survefy} alt="recode" className="pt-5 h-[25rem] w-[50rem]" />
               </div>
           </div>
       </section>
@@ -31,7 +31,7 @@ export default function Page() {
             <Chip color="success" variant="dot">Problem Statement</Chip>
           </div>
           <h1 className="text-white font-sans pt-10  font-bold text-[32px] w-[700px]">
-            Developers often face repetitive coding tasks, leading to inefficiencies and wasted time. ReCode aims to solve this problem by providing a centralized platform where developers can compile and store reusable code. By streamlining workflows and promoting code reusability, ReCode enhances productivity and fosters an efficient coding environment      
+          I built Survefy for business owners, developers, and solopreneurs who need a powerful yet easy-to-use feedback collection tool. Survefy enables you to gather valuable user insights effortlessly, helping you build products that truly resonate with your audience. With features like easy survey creation, real-time feedback analysis, and comprehensive CRUD operations, Survefy ensures you can manage your feedback boards efficiently. Plus, with multi-platform support, you can reach your users wherever they are, making it easier than ever to collect and act on feedback to create products people love.   
           </h1>
       </section>  
 
@@ -40,8 +40,7 @@ export default function Page() {
             <Chip color="success" variant="dot">Objective & Goals</Chip>
           </div>
           <div className="flex flex-col">
-              <h1 className="text-white font-bold text-[20px] pt-10">📌 Enable developers to quickly access and reuse code snippets, Empower developers to focus more on innovation and complex problem-solving.
-              Provide tools for efficient code discovery and organization</h1>
+              <h1 className="text-white font-bold text-[20px] pt-10">📌 To provide business owners, developers, and solopreneurs with an intuitive and efficient tool for collecting and analyzing user feedback, enabling them to create products that truly resonate with their audience.</h1>
               <Image src={codeGraphic} alt="recode" className="pt-5 h-[25rem] w-[50rem]" />
           </div>
       </section>
@@ -64,8 +63,7 @@ export default function Page() {
           <div className="flex flex-row space-x-5 pt-5">
             <Image src={CodingRecode} alt="recode" className="pt-2 h-full w-[40rem]" />
               <p> 
-              When envisioning ReCode, I sought a technology stack that resonated with my principles of simplicity and efficiency. The TALL stack—Tailwind CSS, Alpine.js, Laravel, and Livewire—stood out as the perfect fit.
-              TALL stack was a deliberate decision to ensure that ReCode embodies the principles of developer-centric design. It’s a reflection of my commitment to building not just a platform but a community where innovation thrives without barriers.     
+              Choosing the TALL stack was a deliberate decision to ensure that Survefy embodies the principles of developer-centric design. It’s a reflection of my commitment to building not just a platform but a community where innovation thrives without barriers.Laravel was a natural choice for the backbone of Survefy. Its expressive syntax and robust features not only accelerated development but also provided a stable foundation for our platform to scale.   
               </p>
           </div>
       </section>
@@ -108,10 +106,15 @@ export default function Page() {
           </div>
 
           <p>
-          Tailwind CSS Empowers efficient UI design with a utility-first approach. Its concise classes allow developers to create custom interfaces while maintaining consistency.
-Alpine.js Adds lightweight interactivity without compromising speed. It’s perfect for sprinkling rich, JavaScript-driven interactions throughout ReCode.
-Laravel Provides a robust foundation for scalability and elegant code. Its expressive syntax accelerates development, and its vibrant ecosystem ensures stability.
-Livewire Seamlessly blends server-side stability with real-time reactivity. It simplifies state management, crucial for a collaborative platform like ReCode
+          When envisioning Survefy, I sought a technology stack that resonated with my principles of simplicity and efficiency. The TALL stack—Tailwind CSS, Alpine.js, Laravel, and Livewire—stood out as the perfect fit.
+
+Tailwind CSS revolutionized my approach to UI design. Its utility-first framework empowered me to craft bespoke interfaces with ease, ensuring that every element on ReCode aligns with our unique aesthetic and functional vision.
+
+Alpine.js emerged as the ideal solution for introducing interactivity within our platform. Its lightweight nature meant I could sprinkle rich, JavaScript-driven interactions without weighing down the user experience—a crucial factor for a platform that prioritizes speed and agility.
+
+Laravel was a natural choice for the backbone of Survefy. Its expressive syntax and robust features not only accelerated development but also provided a stable foundation for our platform to scale. Laravel’s vibrant ecosystem and its commitment to elegant code made it an indispensable ally in bringing ReCode to life.
+
+Livewire allowed me to blend server-side stability with front-end reactivity seamlessly. It simplified state management and made real-time updates a breeze, which is essential for a collaborative environment where developers share and manage code snippets in real-time.
           </p>
       </section>
 

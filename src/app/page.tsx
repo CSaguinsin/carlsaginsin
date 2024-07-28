@@ -6,31 +6,35 @@ import {Chip} from "@nextui-org/react";
 import { Link } from "@nextui-org/react";
 import PocketDevs from './pocketdevs';
 import ReCode from './recode';
+import Survefy from './survefy';
 import BuildMastersHub from './buildmastershub';
 import {Button} from "@nextui-org/react";
 export default function Home() {
   return (
 <>
-<section className="flex mx-[2rem]">
-<div className="max-w-[1087px] justify-center items-center mx-auto pt-[5rem]">
-    <Chip color="success" variant="dot">Open for works!</Chip>
-      <h1 className="text-white font-sans  font-bold pt-5 text-[20px]">
-        Hi👋, I’m Carl Saginsin
-      </h1>
-      <h1 className="text-white font-sans  font-bold text-[50px] w-[655px] pb-10">
-        Full Stack Developer passionate with building software solutions
-      </h1>
-      <Link color="foreground" href="/socials">
-
-          <Button color="primary" variant="shadow">
-              Say Hi!👋
-          </Button>  
-    </Link>
+<section className=" mx-[2rem] ">
+<div className="lg:justify-center flex lg:flex-row lg:items-center lg:text-left mx-auto pt-[5rem] md:text-center md:flex-col sm:text-center sm:flex-row">
+    <div className="flex flex-col lg:pb-[30rem] md:mx-auto sm:mx-auto"> 
+        <Chip color="success" variant="dot" className="lg:ml-0 md:mx-auto">
+            Open for works!
+        </Chip>
+        <h1 className="text-white font-sans font-bold pt-5 text-[20px]">
+            Hi👋, I’m Carl Saginsin
+        </h1>
+        <h1 className="text-white font-sans font-bold text-[50px] w-[655px] pb-10">
+            Full Stack Developer passionate with building software solutions
+        </h1>
+        <Link color="foreground" href="/socials">
+            <Button color="primary" variant="shadow" className="lg:ml-0 md:mx-auto">
+                Say Hi!👋
+            </Button>
+        </Link>
+    </div>
+    <div className="pt-[5rem]">
+        <Image src={Me} alt="pic" className="h-[60rem] w-full" />
+    </div>
 </div>
 
-<div className="pt-[5rem]">
-    <Image src={Me} alt="pic" className="h-[60rem] w-full"/>
-</div>
 </section>
 <section className="flex mx-[2rem]">
 <div className="max-w-[1087px] justify-center items-center mx-auto pt-[5rem]">
@@ -169,15 +173,17 @@ export default function Home() {
 </div>
 </section>
 
-<section className="flex mx-[2rem] pb-10">
-<div className="max-w-[1087px] justify-center items-center mx-auto pt-[5rem]">
+<section className="mx-auto flex flex-row  pb-10">
+    <div className="max-w-[1087px] justify-center items-center mx-auto pt-[5rem]">
     <Chip color="success" variant="dot">Software Solutions That I Built</Chip>
-    <div className="flex pt-10 gap-8">
-    <ReCode />
-    <BuildMastersHub />
+        <div className="flex flex-wrap pt-10 gap-8">
+            <Survefy />
+            <ReCode />
+            <BuildMastersHub />
+        </div>
     </div>
-</div>
-</section>  
+</section>
+
 
 
 </>
