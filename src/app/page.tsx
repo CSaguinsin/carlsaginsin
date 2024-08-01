@@ -36,7 +36,7 @@ export default function Home() {
           />
         </div>
         <p className="mx-auto w-[30rem] text-10 font-sans text-neutral-400 pb-8">
-          Crafting something new 👨🏼‍💻. Full stack developer in 1700 🇵🇭. Turning ideas into impactful web apps. Always learning, always improving. Its not just code; its passion.
+          Crafting something new 👨🏼‍💻. Full stack software dev from 1700 🇵🇭. Turning ideas into impactful web apps. Always learning, always improving. Its not just code; its passion.
         </p>
         <div className="flex justify-center items-center gap-x-4">
           <a
