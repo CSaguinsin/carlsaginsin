@@ -12,11 +12,7 @@ export default function App() {
         </Link>
       </NavbarBrand>
       <NavbarContent className="hidden space-x-8 sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="/blogs">
-            Blogs
-          </Link>
-        </NavbarItem>
+
       </NavbarContent>
     </Navbar>
   );
