@@ -2,19 +2,10 @@
 
 import { useState } from 'react';
 import Image from "next/image";
-import Navbar from './navbar';
-import Me from '../../public/me.jpg';
-import Aboutme from '../../public/aboutMe.png';
-import { Chip } from "@nextui-org/react";
-import { Link } from "@nextui-org/react";
-import PocketDevs from './pocketdevs';
-import ReCode from './recode';
-import Survefy from './survefy';
-import BuildMastersHub from './buildmastershub';
-import { Button } from "@nextui-org/react"; // Corrected the closing quote
-import Blogs from './blogs'; // Import the blogs component
-import Projects from './projects'; // Import the projects component
-
+import Me from '../../public/me.jpg'
+import Blogs from './blogs'; 
+import Projects from './projects';
+import About from './about';
 
 export default function Home() {
   const [view, setView] = useState('projects'); // Set initial state to 'projects'
@@ -36,13 +27,13 @@ export default function Home() {
           />
         </div>
         <p className="mx-auto w-[30rem] text-10 font-sans text-neutral-400 pb-8">
-          Crafting something new 👨🏼‍💻. Full stack software dev from 1700 🇵🇭. Turning ideas into impactful web apps. Always learning, always improving. Its not just code; its passion.
+          Crafting something new 👨🏼‍💻. Full stack software dev from 1700 🇵🇭. Turning ideas into impactful web apps. Always learning, always improving. Its not just code, its passion.
         </p>
         <div className="flex justify-center items-center gap-x-4">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://instagram.com/rubengroot_"
+            href="https://www.instagram.com/carl_sgnsn/"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +55,7 @@ export default function Home() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://x.com/rubenpdegroot"
+            href="https://x.com/cj_sagnsn"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +75,7 @@ export default function Home() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/degrootruben"
+            href="https://github.com/CSaguinsin"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +96,7 @@ export default function Home() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/grootruben/"
+            href="https://www.linkedin.com/in/carl-saginsin-30358928a/"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +140,11 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a className="" href="/about/">
+              <a 
+                className={view === 'about' ? 'font-bold' : ''}
+                href="#"
+                onClick={() => setView('about')}
+                >
                 About
               </a>
             </li>
@@ -157,7 +152,7 @@ export default function Home() {
         </nav>
 
         <section className="posts">
-          {view === 'blogs' ? <Blogs /> : view === 'projects' ? <Projects /> : (
+          {view === 'blogs' ? <Blogs /> : view === 'projects' ? <Projects /> : view === 'about' ? <About /> :(
             <ul className="space-y-4">
               {/* <li className="space-x-10">
                 <a href="/blog/high-agency">High Agency</a>
