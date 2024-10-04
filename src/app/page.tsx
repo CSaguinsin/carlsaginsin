@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from "next/image";
 import Me from '../../public/me.jpg'
-import Blogs from './blogs'; 
+import Experience from './experience'; // Ensure the path is correct
 import Projects from './projects';
 import About from './about';
 
@@ -27,7 +27,7 @@ export default function Home() {
           />
         </div>
         <p className="mx-auto w-[30rem] text-10 font-sans text-neutral-400 pb-8">
-          Crafting something new 👨🏼‍💻. Full stack software dev from 1700 🇵🇭. Turning ideas into impactful web apps. Always learning, always improving. Its not just code, its passion.
+          Crafting something new 👨🏼‍💻. Full stack software engr from 1700 🇵🇭. Turning ideas into impactful software. Always learning, always improving. Its not just code, its passion.
         </p>
         <div className="flex justify-center items-center gap-x-4">
           <a
@@ -132,11 +132,11 @@ export default function Home() {
             </li>
             <li>
               <a
-                className={view === 'blogs' ? 'font-bold' : ''}
+                className={view === 'experience' ? 'font-bold' : ''}
                 href="#"
-                onClick={() => setView('blogs')}
+                onClick={() => setView('experience')}
               >
-                Blog
+                Experience
               </a>
             </li>
             <li>
@@ -152,7 +152,7 @@ export default function Home() {
         </nav>
 
         <section className="posts">
-          {view === 'blogs' ? <Blogs /> : view === 'projects' ? <Projects /> : view === 'about' ? <About /> :(
+          {view === 'experience' ? <Experience /> : view === 'projects' ? <Projects /> : view === 'about' ? <About /> :(
             <ul className="space-y-4">
               {/* <li className="space-x-10">
                 <a href="/blog/high-agency">High Agency</a>

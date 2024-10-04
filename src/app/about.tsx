@@ -9,7 +9,7 @@ function about() {
           <ul className="space-y-2 w-[32.5rem]">
                 <h1 className="text-[2rem]">Hi there 👋</h1>
                 <p>
-                    Im Carl 👨‍💻, 22 years old Full Stack Software Developer from 📍 1700.
+                    Im Carl 👨‍💻, 22 years old Software Engineer from 📍 1700.
                     I love to build softwares 🐱‍💻,  Besides programming I love to drive, especially in the night either using a car 🚗 or a motor 🛵
                 </p>
           </ul>

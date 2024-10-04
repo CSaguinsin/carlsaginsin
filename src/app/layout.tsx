@@ -7,7 +7,7 @@ import Navbar from './navbar';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Carl Saginsin | Full Stack Dev",
+  title: "Carl Saginsin | Software Engr",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className='dark'>
-      <body className={inter.className}>        
+    <body className={`${inter.className} bg-black text-white`}>  
     <Providers>
     <Navbar />
       {children}
