@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <section className="mx-auto max-w-screen-lg text-center">
+      {/* <section className="mx-auto max-w-screen-lg text-center">
         <h1 className="text-[3rem] font-sans pt-[4rem] pb-8">Carl Saginsin</h1>
         <div className="flex justify-center items-center flex-col">
           <Image
@@ -116,7 +116,7 @@ export default function Home() {
             </svg>
           </a>
         </div>
-      </section>
+      </section> */}
 
       <div className="pt-[5rem] flex flex-col lg:flex-row justify-center lg:space-x-[9rem]">
         <nav role="navigation" className="mb-4 lg:mb-0">
